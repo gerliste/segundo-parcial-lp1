@@ -23,8 +23,8 @@ print(tabla_edades)
 
 # 3. Agrupar las cantidades de compras por categorías (pocas: hasta 10, intermedias: de 11 a 30, muchas: más de 30) y guardar la cantidad de gente para esos rangos.
 
-datos$GrupoCompras <- ifelse(datos$Purchase.Count <= 10, "pocas",
-                             ifelse(datos$Purchase.Count <= 30, "intermedias", "muchas"))
+datos$GrupoCompras <- ifelse(datos$Previous.Purchases <= 10, "pocas",
+                             ifelse(datos$Previous.Purchases <= 30, "intermedias", "muchas"))
 
 tabla_compras <- table(datos$GrupoCompras)
 print("Cantidad de gente por rango de compras:")
@@ -36,7 +36,7 @@ tabla_items <- table(datos$Item.Purchased, datos$Size)
 print("Cantidad de ítems comprados por tipo y talle:")
 print(tabla_items)
 
-# 5️.Agrupar los diferentes colores de los ítems comprados y mostrar las cantidades de cada uno.r
+# 5. Agrupar los diferentes colores de los ítems comprados y mostrar las cantidades de cada uno.r
 
 tabla_colores <- table(datos$Color)
 print("Cantidad de ítems por color:")
@@ -44,4 +44,5 @@ print(tabla_colores)
 
 
 # Se leyó el csv, se crearon grupos de edad y de cantidad de compras, y se contaron ítems por tipo/talle y colores.
+
 
