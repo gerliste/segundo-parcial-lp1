@@ -43,4 +43,5 @@ print("Cantidad de ítems por color:")
 print(tabla_colores)
 
 
-# En resumen se lee el csv, se crean grupos de edad y de cantidad de compras, se cuentan ítems por tipo/talle y colores
+# Se leyó el csv, se crearon grupos de edad y de cantidad de compras, y se contaron ítems por tipo/talle y colores.
+
