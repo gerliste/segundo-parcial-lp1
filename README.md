@@ -10,3 +10,9 @@ El trabajo incluye:
 3. Clasificación de usuarios por cantidad de compras realizadas.
 4. Conteo de ítems comprados por tipo y talle.
 5. Análisis de colores de los productos comprados.
+
+# Ejecución
+1. Abrir la carpeta en RStudio.  
+2. Cargar el archivo `shopping_behavior_updated.csv`.  
+3. Ejecutar todo el script `parcial2.R`.  
+4. Los resultados aparecen en consola.
